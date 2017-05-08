@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CB03E6721EBED2ED005511A0 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CB03E6711EBED2ED005511A0 /* Podfile */; };
 		CB03E6751EBED504005511A0 /* UIButton+EX.m in Sources */ = {isa = PBXBuildFile; fileRef = CB03E6741EBED504005511A0 /* UIButton+EX.m */; };
+		CB5D6A731EBFECFB00F9C420 /* AppSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5D6A721EBFECFB00F9C420 /* AppSingleton.m */; };
 		CBCF91251EBECEF8006BB5E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCF91241EBECEF8006BB5E3 /* main.m */; };
 		CBCF91281EBECEF8006BB5E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCF91271EBECEF8006BB5E3 /* AppDelegate.m */; };
 		CBCF91301EBECEF9006BB5E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCF912F1EBECEF9006BB5E3 /* Assets.xcassets */; };
@@ -21,6 +22,8 @@
 		CB03E6711EBED2ED005511A0 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		CB03E6731EBED504005511A0 /* UIButton+EX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EX.h"; sourceTree = "<group>"; };
 		CB03E6741EBED504005511A0 /* UIButton+EX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EX.m"; sourceTree = "<group>"; };
+		CB5D6A711EBFECFB00F9C420 /* AppSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSingleton.h; sourceTree = "<group>"; };
+		CB5D6A721EBFECFB00F9C420 /* AppSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSingleton.m; sourceTree = "<group>"; };
 		CBCF91201EBECEF8006BB5E3 /* AppTemplate_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTemplate_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCF91241EBECEF8006BB5E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CBCF91261EBECEF8006BB5E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,6 +49,8 @@
 		CB03E66F1EBED25E005511A0 /* AppBase */ = {
 			isa = PBXGroup;
 			children = (
+				CB5D6A711EBFECFB00F9C420 /* AppSingleton.h */,
+				CB5D6A721EBFECFB00F9C420 /* AppSingleton.m */,
 				CB03E6701EBED28F005511A0 /* APPConst.h */,
 			);
 			path = AppBase;
@@ -178,6 +183,7 @@
 				CBCF914A1EBED0E5006BB5E3 /* UIView+EX.m in Sources */,
 				CB03E6751EBED504005511A0 /* UIButton+EX.m in Sources */,
 				CBCF91251EBECEF8006BB5E3 /* main.m in Sources */,
+				CB5D6A731EBFECFB00F9C420 /* AppSingleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
