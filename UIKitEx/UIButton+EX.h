@@ -10,7 +10,10 @@
 
 @interface UIButton (EX)
 
-+ (UIButton *)publicTestButtonWithTitle:(NSString *)title;
++ (UIButton *)publicTestButtonWithTitle:(NSString *)title
+                                 target:(id)target
+                             upInAction:(SEL)action
+                              superView:(UIView *)superView;
 
 + (UIButton *)buttonWithBgImgName:(NSString *)imgName
                            target:(id)target

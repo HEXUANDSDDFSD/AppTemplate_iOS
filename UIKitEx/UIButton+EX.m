@@ -10,8 +10,16 @@
 
 @implementation UIButton (EX)
 
-+ (UIButton *)publicTestButtonWithTitle:(NSString *)title {
++ (UIButton *)publicTestButtonWithTitle:(NSString *)title
+                                 target:(id)target
+                             upInAction:(SEL)action
+                              superView:(UIView *)superView {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:title forState:UIControlStateNormal];
+    button.frame = CGRectMake(0, 0, 100, 50);
+    button.backgroundColor = [UIColor orangeColor];
+    [superView addSubview:button];
+    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
 
