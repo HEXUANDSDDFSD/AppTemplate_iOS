@@ -82,14 +82,17 @@
 }
 
 - (void)bannerAnimation {
-    [_scrollView setContentOffset:CGPointMake(_scrollView.contentOffset.x + _scrollView.width, 0) animated:YES];
+    if (_scrollView.contentOffset.x > self.width / 2) {
+        [self rightResetImg];
+    }
+    [_scrollView setContentOffset:CGPointMake(self.width, 0) animated:YES];
 }
 
 - (void)setBannerImgList:(NSArray *)bannerImgList {
     if ([bannerImgList count] == 0) {
         return;
     }
-
+    
     _bannerImgList = [bannerImgList copy];
     pageControl.numberOfPages = [_bannerImgList count];
     if ([bannerImgList count] == 1){
@@ -114,32 +117,23 @@
     }
 }
 
+- (void)rightResetImg {
+    NSInteger sum = [_bannerImgList count];
+    leftView.image = rightView.image;
+    current++;
+    if (current >= sum) {
+        current = 0;
+    }
+    int rightImgIndex = current + 1;
+    if (rightImgIndex >= sum) {
+        rightImgIndex = 0;
+    }
+    rightView.image = _bannerImgList[rightImgIndex];
+    _scrollView.contentOffset = CGPointMake(0, 0);
+}
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     NSInteger sum = [_bannerImgList count];
-    
-    if  (scrollView.contentOffset.x < 0){
-        scrollView.contentOffset = CGPointMake(scrollView.contentOffset.x + self.width, 0);
-        
-        rightView.image = leftView.image;
-        current--;
-        if (current < 0) {
-            current+= sum;
-        }
-        leftView.image = _bannerImgList[current];
-    }
-    else if (scrollView.contentOffset.x > self.width){
-        scrollView.contentOffset = CGPointMake(scrollView.contentOffset.x - self.width, 0);
-        leftView.image = rightView.image;
-        current++;
-        if (current >= sum) {
-            current = 0;
-        }
-        int rightImgIndex = current + 1;
-        if (rightImgIndex >= sum) {
-            rightImgIndex = 0;
-        }
-        rightView.image = _bannerImgList[rightImgIndex];
-    }
     
     if (scrollView.contentOffset.x < self.width / 2) {
         isShowLeft = YES;
@@ -155,5 +149,19 @@
         pageIndex = 0;
     }
     pageControl.currentPage = pageIndex;
+    
+    if  (scrollView.contentOffset.x < 0){
+        scrollView.contentOffset = CGPointMake(scrollView.contentOffset.x + self.width, 0);
+        
+        rightView.image = leftView.image;
+        current--;
+        if (current < 0) {
+            current+= sum;
+        }
+        leftView.image = _bannerImgList[current];
+    }
+    else if (scrollView.contentOffset.x > self.width){
+        [self rightResetImg];
+    }
 }
 @end
