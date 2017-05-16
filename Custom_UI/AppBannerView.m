@@ -151,7 +151,6 @@
     pageControl.currentPage = pageIndex;
     
     if  (scrollView.contentOffset.x < 0){
-        scrollView.contentOffset = CGPointMake(scrollView.contentOffset.x + self.width, 0);
         
         rightView.image = leftView.image;
         current--;
@@ -159,6 +158,7 @@
             current+= sum;
         }
         leftView.image = _bannerImgList[current];
+        scrollView.contentOffset = CGPointMake(scrollView.contentOffset.x + self.width, 0);
     }
     else if (scrollView.contentOffset.x > self.width){
         [self rightResetImg];

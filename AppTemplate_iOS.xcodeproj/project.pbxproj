@@ -10,6 +10,10 @@
 		CB03E6721EBED2ED005511A0 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CB03E6711EBED2ED005511A0 /* Podfile */; };
 		CB03E6751EBED504005511A0 /* UIButton+EX.m in Sources */ = {isa = PBXBuildFile; fileRef = CB03E6741EBED504005511A0 /* UIButton+EX.m */; };
 		CB1B93221EC1BEFD00CBE49C /* AppBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1B93211EC1BEFD00CBE49C /* AppBannerView.m */; };
+		CB2031CC1ECBBCC100FE936F /* AppPromptBox.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2031CB1ECBBCC100FE936F /* AppPromptBox.m */; };
+		CB2031CF1ECBBCDA00FE936F /* UIViewController+EX.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2031CE1ECBBCDA00FE936F /* UIViewController+EX.m */; };
+		CB2031D41ECBBD8100FE936F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB2031D61ECBBD8100FE936F /* Localizable.strings */; };
+		CB2031D91ECBBDDD00FE936F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB2031DB1ECBBDDD00FE936F /* InfoPlist.strings */; };
 		CB5D6A731EBFECFB00F9C420 /* AppSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5D6A721EBFECFB00F9C420 /* AppSingleton.m */; };
 		CBCF91251EBECEF8006BB5E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCF91241EBECEF8006BB5E3 /* main.m */; };
 		CBCF91281EBECEF8006BB5E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCF91271EBECEF8006BB5E3 /* AppDelegate.m */; };
@@ -25,6 +29,15 @@
 		CB03E6741EBED504005511A0 /* UIButton+EX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EX.m"; sourceTree = "<group>"; };
 		CB1B93201EC1BEFD00CBE49C /* AppBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppBannerView.h; sourceTree = "<group>"; };
 		CB1B93211EC1BEFD00CBE49C /* AppBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppBannerView.m; sourceTree = "<group>"; };
+		CB2031CA1ECBBCC100FE936F /* AppPromptBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPromptBox.h; sourceTree = "<group>"; };
+		CB2031CB1ECBBCC100FE936F /* AppPromptBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppPromptBox.m; sourceTree = "<group>"; };
+		CB2031CD1ECBBCDA00FE936F /* UIViewController+EX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+EX.h"; sourceTree = "<group>"; };
+		CB2031CE1ECBBCDA00FE936F /* UIViewController+EX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+EX.m"; sourceTree = "<group>"; };
+		CB2031D51ECBBD8100FE936F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CB2031D71ECBBDC300FE936F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		CB2031D81ECBBDC400FE936F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CB2031DA1ECBBDDD00FE936F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB2031DC1ECBBDE200FE936F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		CB5D6A711EBFECFB00F9C420 /* AppSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSingleton.h; sourceTree = "<group>"; };
 		CB5D6A721EBFECFB00F9C420 /* AppSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSingleton.m; sourceTree = "<group>"; };
 		CBCF91201EBECEF8006BB5E3 /* AppTemplate_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTemplate_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +75,8 @@
 		CB1B931F1EC1BEEA00CBE49C /* Custom_UI */ = {
 			isa = PBXGroup;
 			children = (
+				CB2031CA1ECBBCC100FE936F /* AppPromptBox.h */,
+				CB2031CB1ECBBCC100FE936F /* AppPromptBox.m */,
 				CB1B93201EC1BEFD00CBE49C /* AppBannerView.h */,
 				CB1B93211EC1BEFD00CBE49C /* AppBannerView.m */,
 			);
@@ -71,6 +86,8 @@
 		CBCF91171EBECEF8006BB5E3 = {
 			isa = PBXGroup;
 			children = (
+				CB2031DB1ECBBDDD00FE936F /* InfoPlist.strings */,
+				CB2031D61ECBBD8100FE936F /* Localizable.strings */,
 				CB03E6711EBED2ED005511A0 /* Podfile */,
 				CB1B931F1EC1BEEA00CBE49C /* Custom_UI */,
 				CB03E66F1EBED25E005511A0 /* AppBase */,
@@ -112,6 +129,8 @@
 		CBCF91471EBECF99006BB5E3 /* UIKitEx */ = {
 			isa = PBXGroup;
 			children = (
+				CB2031CD1ECBBCDA00FE936F /* UIViewController+EX.h */,
+				CB2031CE1ECBBCDA00FE936F /* UIViewController+EX.m */,
 				CBCF91481EBED0E5006BB5E3 /* UIView+EX.h */,
 				CBCF91491EBED0E5006BB5E3 /* UIView+EX.m */,
 				CB03E6731EBED504005511A0 /* UIButton+EX.h */,
@@ -163,6 +182,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = CBCF91171EBECEF8006BB5E3;
 			productRefGroup = CBCF91211EBECEF8006BB5E3 /* Products */;
@@ -180,8 +200,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB03E6721EBED2ED005511A0 /* Podfile in Resources */,
+				CB2031D41ECBBD8100FE936F /* Localizable.strings in Resources */,
 				CBCF91331EBECEF9006BB5E3 /* LaunchScreen.storyboard in Resources */,
 				CBCF91301EBECEF9006BB5E3 /* Assets.xcassets in Resources */,
+				CB2031D91ECBBDDD00FE936F /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,9 +215,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB1B93221EC1BEFD00CBE49C /* AppBannerView.m in Sources */,
+				CB2031CC1ECBBCC100FE936F /* AppPromptBox.m in Sources */,
 				CBCF91281EBECEF8006BB5E3 /* AppDelegate.m in Sources */,
 				CBCF914A1EBED0E5006BB5E3 /* UIView+EX.m in Sources */,
 				CB03E6751EBED504005511A0 /* UIButton+EX.m in Sources */,
+				CB2031CF1ECBBCDA00FE936F /* UIViewController+EX.m in Sources */,
 				CBCF91251EBECEF8006BB5E3 /* main.m in Sources */,
 				CB5D6A731EBFECFB00F9C420 /* AppSingleton.m in Sources */,
 			);
@@ -204,10 +228,29 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		CB2031D61ECBBD8100FE936F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB2031D51ECBBD8100FE936F /* en */,
+				CB2031D81ECBBDC400FE936F /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CB2031DB1ECBBDDD00FE936F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB2031DA1ECBBDDD00FE936F /* en */,
+				CB2031DC1ECBBDE200FE936F /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		CBCF91311EBECEF9006BB5E3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CBCF91321EBECEF9006BB5E3 /* Base */,
+				CB2031D71ECBBDC300FE936F /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -219,6 +262,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -268,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
